@@ -1,6 +1,4 @@
 
-from random import random, randint
-import math
 
 # the dorms, each of which has two available spaces
 dorms = ['Zeus', 'Athena', 'Hercules', 'Bacchus', 'Pluto']
