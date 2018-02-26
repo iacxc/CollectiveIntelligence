@@ -45,13 +45,17 @@ def dormcost(vec):
     for i,x in enumerate(vec):
         dorm = dorms[slots[x]]
         pref = prefs[i][1]
+#        print(prefs[i][0], pref, dorm, end=' ')
         # First choice costs 0, second choice costs 1, not on the list costs 3
         if pref[0] == dorm:
             cost += 0
+#            print()
         elif pref[1] == dorm:
             cost += 1
+#            print('+1')
         else:
             cost += 3
+#            print('+3')
 
         del slots[x]
 
